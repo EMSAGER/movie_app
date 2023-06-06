@@ -1,0 +1,57 @@
+h1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 36px;
+   color: midnightblue;
+   /* border-bottom: 5px solid midnightblue; */
+}
+
+body {
+   background-color: blanchedalmond;
+}
+
+/* #input-form {
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   margin: auto;
+   margin-top: 20px;
+   box-sizing: border-box;
+   position: absolute;
+   left: 400px;
+} */
+
+input#movie-title{
+   /* width: 400px; */
+}
+
+table {
+   /* display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto; */
+   
+}
+
+thead {
+   /* position: absolute;
+   top: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center; */
+}
+
+th {
+   /* box-sizing: border-box;
+   display: inline-block;
+   margin: 50px;
+   margin-top: 20px;
+   font-size: 24px; */
+   color: midnightblue;
+   border-bottom: 2px solid midnightblue;
+}
+
+tbody tr td{
+   position: relative;
+}

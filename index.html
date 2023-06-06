@@ -8,10 +8,29 @@
     <title>Movie Ratings Application</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" placeholder="Movie Title">
-        <button id = "title-button">Submit</button>
+    <h1>Movie Ratings</h1>
+    <form action="" id="input-form">
+        <div class="title-ratings-input">
+            <input type="text" placeholder="Movie Title" id="movie-title">
+            <input type="number" min="0" max="10" id="rating">
+            <button id = "submit-button">Submit</button>
+        </div>    
     </form>
+    <table>
+        <thead>
+            <tr>
+                <!-- look into scope for <th> is it global when interacting with dom? -->
+                <th id="title-heading">Movie Title</th>
+                <th id="rating-heading">Movie Rating</th>
+                <th id="delete-heading" >Delete</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
