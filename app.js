@@ -8,9 +8,9 @@ $(function(){
     $('#input-form').on('submit', function(e){
         e.preventDefault();
         
-        let $movie = $('#movie-title').val();
+        let $movieTitle = $('#movie-title').val();
         let $rating = $('#rating').val();
-        let movieData = { $movie, $rating, currMovieId};
+        let movieData = { $movieTitle, $rating, currMovieId};
 
         const movieHtml = transformMovieData(movieData);
         movieRatings.push(movieData);
@@ -22,8 +22,8 @@ $(function(){
         // $('#input-form').trigger('submit', function(){
         // $movie.innerHtml('');
         // $rating.innerHtml('');
-    $('#table-body').on('click', 'delete-movie-data', function(e){
-        let deleteRow = movieRatings.findIndex(movie => movie.currMovieId ===+$(evt.target).data("deleteId"));
+    $('#table-body').on('click', '#delete-movie-data', function(e){
+        let deleteRow = movieRatings.findIndex(movie => movie.currMovieId ===+$(e.target).data("deleteId"));
 
         movieRatings.splice(deleteRow, 1);
 
@@ -48,10 +48,10 @@ $(function(){
 function transformMovieData(movieData){
     return `
         <tr>
-            <td>${movieData.$movie}</td>
+            <td>${movieData.$movieTitle}</td>
             <td>${movieData.$rating}</td>
             <td>
-                <button id = "delete-movie-data"> Delete </button>
+                <button id = "delete-movie-data" data-delete-id = "${movieData.currMovieId}"> Delete </button>
             </td>
         </tr>
         `;
