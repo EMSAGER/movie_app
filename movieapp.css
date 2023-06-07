@@ -1,16 +1,17 @@
 h1{
-   display: flex;
+   /* display: flex;
    justify-content: center;
-   align-items: center;
+   align-items: center; */
    font-size: 36px;
    color: midnightblue;
+   text-align: center;
    /* border-bottom: 5px solid midnightblue; */
 }
 
 body {
    background-color: blanchedalmond;
 }
-/* 
+
 #input-form {
    display: flex;
    justify-content: center;
@@ -20,25 +21,18 @@ body {
    box-sizing: border-box;
    position: absolute;
    left: 400px;
-} */
+}
 
 input#movie-title{
    /* width: 400px; */
 }
 
-table {
-   /* display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: auto; */
-   
-}
+
 
 thead {
    /* position: absolute;
    top: 150px;
-   display: flex;
-   justify-content: center;
+   
    align-items: center; */
 }
 
@@ -50,11 +44,26 @@ th {
    font-size: 24px; */
    color: midnightblue;
    border-bottom: 2px solid midnightblue;
+   box-sizing: border-box;
+   margin: auto;
+   padding: 10px;
 }
 
 tbody tr td{
    position: relative;
+   text-align: center;
 }
 table, th, td {
    border: 1px solid;
+   margin-left: auto;
+   margin-right: auto;
  }
+
+#title-heading {
+   text-align: center;
+}
+ table{
+   margin-top: 25px;
+   
+ }
+
