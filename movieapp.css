@@ -10,11 +10,11 @@ h1{
 body {
    background-color: blanchedalmond;
 }
-
-/* #input-form {
+/* 
+#input-form {
    display: flex;
    justify-content: center;
-   /* align-items: center; */
+   /* align-items: center; 
    margin: auto;
    margin-top: 20px;
    box-sizing: border-box;
@@ -55,3 +55,6 @@ th {
 tbody tr td{
    position: relative;
 }
+table, th, td {
+   border: 1px solid;
+ }
